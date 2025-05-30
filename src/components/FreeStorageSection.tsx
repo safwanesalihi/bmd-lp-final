@@ -44,7 +44,12 @@ const FreeStorageSection = () => {
                   <div className="text-2xl font-bold">مجانا تماما!</div>
                 </div>
                 <p className="text-xl mb-4">كلشي فابور، وهادي ماكايناش فالسوق المغربي</p>
-                <button className="bg-white text-blue-600 font-bold py-3 px-6 rounded-lg hover:bg-blue-50 transition-all duration-300 mx-auto block">
+                <button
+                  className="bg-white text-blue-600 font-bold py-3 px-6 rounded-lg hover:bg-blue-50 transition-all duration-300 mx-auto block"
+                  onClick={() => {
+                    window.location.href = "#contact";
+                  }}
+                >
                   جرب الخدمة
                 </button>
               </div>
