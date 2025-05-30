@@ -1,3 +1,4 @@
+import { scrollToContact } from '@/utils/scrollUtils';
 const FreeStorageSection = () => {
   return (
     <section className="py-20 bg-blue-800">
@@ -46,9 +47,7 @@ const FreeStorageSection = () => {
                 <p className="text-xl mb-4">كلشي فابور، وهادي ماكايناش فالسوق المغربي</p>
                 <button
                   className="bg-white text-blue-600 font-bold py-3 px-6 rounded-lg hover:bg-blue-50 transition-all duration-300 mx-auto block"
-                  onClick={() => {
-                    window.location.href = "#contact";
-                  }}
+                  onClick={scrollToContact}
                 >
                   جرب الخدمة
                 </button>
